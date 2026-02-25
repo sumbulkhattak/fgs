@@ -1,7 +1,10 @@
 {
-  "version": 2,
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "",
+  "outputDirectory": ".",
   "rewrites": [
-    { "source": "/contact", "destination": "/api" },
-    { "source": "/admission", "destination": "/api" }
+    { "source": "/api/contact", "destination": "/api" },
+    { "source": "/api/admission", "destination": "/api" }
   ]
 }
