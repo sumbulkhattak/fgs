@@ -4,7 +4,7 @@ const path = require("path");
 
 const app = express();
 const PORT = 3000;
-const DATA_DIR = path.join(__dirname, "data");
+const DATA_DIR = process.env.VERCEL ? "/tmp" : path.join(__dirname, "data");
 const MESSAGES_FILE = path.join(DATA_DIR, "messages.json");
 const ADMISSIONS_FILE = path.join(DATA_DIR, "admissions.json");
 
@@ -82,3 +82,5 @@ app.get("/api/admissions", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+module.exports = app;
