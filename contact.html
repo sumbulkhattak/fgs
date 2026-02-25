@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Future Generation School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="images/school-photo1.jpg" alt="FGS Logo">Future Generation School</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="departments.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for admissions, queries, or feedback.</p>
+</section>
+
+<section class="contact">
+    <p><b>Address:</b> Ghazi Town, Scheme 33, Karachi</p>
+    <p><b>Phone:</b> 0332 3295994</p>
+    <p><b>Email:</b> alimunawar100@yahoo.com</p>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-form">
+    <h2>Send Us a Message</h2>
+
+    <div id="success-msg" class="success-msg" style="display:none;">
+        Your message has been sent successfully!
+    </div>
+
+    <form action="/contact" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>Future Generation School</p>
+    <p>Address: Ghazi Town, Scheme 33, Karachi | Phone: 0332 3295994</p>
+    <p>&copy; 2026 Future Generation School. All Rights Reserved.</p>
+</footer>
+
+<script>
+    if (window.location.search.includes("success=true")) {
+        document.getElementById("success-msg").style.display = "block";
+    }
+</script>
+
+</body>
+</html>

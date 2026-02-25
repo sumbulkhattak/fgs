@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions - Future Generation School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="images/school-photo1.jpg" alt="FGS Logo">Future Generation School</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="staff.html">Staff</a>
+            <a href="departments.html">Achievements</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="students.html">Students</a>
+            <a href="activities.html">Activities</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO BANNER -->
+<div class="adm-hero">
+    <div class="adm-hero-overlay"></div>
+    <div class="adm-hero-content">
+        <span class="adm-hero-tag">Admissions Open 2026-27</span>
+        <h1>Shape Your<br>Child's Future</h1>
+        <p>Join one of Karachi's leading educational institutions</p>
+        <a href="#admission-form" class="btn-yellow" style="margin-top:24px;">Apply Now</a>
+    </div>
+</div>
+
+<!-- QUICK INFO STRIP -->
+<div class="adm-strip">
+    <div class="adm-strip-item">
+        <span class="adm-strip-label">Established</span>
+        <span class="adm-strip-value">1995</span>
+    </div>
+    <div class="adm-strip-item">
+        <span class="adm-strip-label">Programs</span>
+        <span class="adm-strip-value">Nursery to Inter</span>
+    </div>
+    <div class="adm-strip-item">
+        <span class="adm-strip-label">Pass Rate</span>
+        <span class="adm-strip-value">98%</span>
+    </div>
+    <div class="adm-strip-item">
+        <span class="adm-strip-label">Students</span>
+        <span class="adm-strip-value">1200+</span>
+    </div>
+</div>
+
+<!-- SCHOOL INFO CARDS -->
+<div class="adm-info">
+    <div class="adm-info-inner">
+        <div class="adm-info-header">
+            <span class="adm-info-tag">About the Institution</span>
+            <h2>School Information</h2>
+        </div>
+        <div class="adm-info-grid">
+            <div class="adm-info-card">
+                <span class="adm-info-num">01</span>
+                <h3>Affiliation</h3>
+                <p>Affiliated with the Board of Intermediate &amp; Secondary Education. Recognized by the Education Department.</p>
+            </div>
+            <div class="adm-info-card">
+                <span class="adm-info-num">02</span>
+                <h3>Programs Offered</h3>
+                <p>Pre-Primary, Primary (1-5), Middle (6-8), Matric (9-10), Intermediate (11-12) in Science &amp; Arts.</p>
+            </div>
+            <div class="adm-info-card">
+                <span class="adm-info-num">03</span>
+                <h3>School Timings</h3>
+                <p>Monday to Saturday<br>8:00 AM &ndash; 2:00 PM<br>Office: 8:00 AM &ndash; 4:00 PM</p>
+            </div>
+            <div class="adm-info-card">
+                <span class="adm-info-num">04</span>
+                <h3>Fee Structure</h3>
+                <p>Admission Fee: Rs. 5,000<br>Monthly Fee: Rs. 2,000 &ndash; 4,500<br>(Varies by class)</p>
+            </div>
+            <div class="adm-info-card">
+                <span class="adm-info-num">05</span>
+                <h3>Facilities</h3>
+                <p>Science Labs, Computer Lab, Library, Playground, Transport, Canteen</p>
+            </div>
+            <div class="adm-info-card">
+                <span class="adm-info-num">06</span>
+                <h3>Scholarships</h3>
+                <p>Merit-based scholarships for top 3 positions in each class. Need-based fee concession available.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT INFO -->
+<div class="adm-contact">
+    <div class="adm-contact-inner">
+        <div class="adm-contact-left">
+            <span class="adm-contact-tag">Get in Touch</span>
+            <h2>Contact &amp; Location</h2>
+            <p class="adm-contact-desc">
+                Visit us or reach out for any queries regarding admissions,
+                fee structure, or school information. We're here to help!
+            </p>
+        </div>
+        <div class="adm-contact-cards">
+            <div class="adm-contact-card">
+                <span class="adm-cc-label">Address</span>
+                <p>Future Generation School<br>Ghazi Town Near City View Project<br>Scheme 33, Karachi, Pakistan, 75400</p>
+            </div>
+            <div class="adm-contact-card">
+                <span class="adm-cc-label">Phone</span>
+                <p>0332 3295994</p>
+            </div>
+            <div class="adm-contact-card">
+                <span class="adm-cc-label">Email &amp; Social</span>
+                <p>alimunawar100@yahoo.com<br>Facebook: Future Generation School</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ADMISSION FORM -->
+<div class="adm-form-section" id="admission-form">
+    <div class="adm-form-inner">
+        <div class="adm-form-header">
+            <span class="adm-form-tag">Apply Now</span>
+            <h2>Online Admission Form</h2>
+            <p>Fill out the form below to apply. We will contact you within 3 working days.</p>
+        </div>
+
+        <div class="adm-form-box">
+            <div id="success-msg" class="success-msg" style="display:none;">
+                Your admission form has been submitted successfully! We will contact you soon.
+            </div>
+
+            <form action="/admission" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="student-name">Student Name</label>
+                        <input type="text" id="student-name" name="studentName" placeholder="Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="father-name">Father's Name</label>
+                        <input type="text" id="father-name" name="fatherName" placeholder="Father's full name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="class-apply">Applying for Class</label>
+                        <select id="class-apply" name="classApply" required>
+                            <option value="">Select class</option>
+                            <option value="nursery">Nursery</option>
+                            <option value="prep">Prep</option>
+                            <option value="1">Class 1</option>
+                            <option value="2">Class 2</option>
+                            <option value="3">Class 3</option>
+                            <option value="4">Class 4</option>
+                            <option value="5">Class 5</option>
+                            <option value="6">Class 6</option>
+                            <option value="7">Class 7</option>
+                            <option value="8">Class 8</option>
+                            <option value="9-science">Class 9 (Science)</option>
+                            <option value="9-arts">Class 9 (Arts)</option>
+                            <option value="11-science">1st Year (Science)</option>
+                            <option value="11-arts">1st Year (Arts)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="previous-school">Previous School</label>
+                        <input type="text" id="previous-school" name="previousSchool" placeholder="Name of previous school">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (Optional)</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Home Address</label>
+                    <input type="text" id="address" name="address" placeholder="Full address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Any additional information..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-yellow" style="margin-top:16px; border:none; cursor:pointer; font-family:'Inter',sans-serif; padding:16px 40px; font-size:13px; text-transform:uppercase; letter-spacing:2px; font-weight:700;">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Future Generation School</h4>
+            <p>Building bright futures through quality education since 1995.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="staff.html">Our Staff</a>
+            <a href="departments.html">Achievements</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="activities.html">Activities</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Ghazi Town, Scheme 33, Karachi</p>
+            <p>0332 3295994</p>
+            <p>alimunawar100@yahoo.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Future Generation School. All Rights Reserved.
+    </div>
+</footer>
+
+<script>
+    if (window.location.search.includes("success=true")) {
+        document.getElementById("success-msg").style.display = "block";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#34495e"/>
+  <circle cx="120" cy="120" r="30" fill="#ecf0f1"/>
+  <ellipse cx="120" cy="190" rx="35" ry="28" fill="#ecf0f1"/>
+  <circle cx="240" cy="120" r="30" fill="#ecf0f1"/>
+  <ellipse cx="240" cy="190" rx="35" ry="28" fill="#ecf0f1"/>
+  <circle cx="360" cy="120" r="30" fill="#ecf0f1"/>
+  <ellipse cx="360" cy="190" rx="35" ry="28" fill="#ecf0f1"/>
+  <circle cx="480" cy="120" r="30" fill="#ecf0f1"/>
+  <ellipse cx="480" cy="190" rx="35" ry="28" fill="#ecf0f1"/>
+  <text x="300" y="270" text-anchor="middle" fill="#bdc3c7" font-family="Arial" font-size="20">Science Department Group Photo</text>
+</svg>

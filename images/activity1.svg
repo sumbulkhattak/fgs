@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#1a1a1a"/>
+  <circle cx="200" cy="100" r="40" fill="#333" stroke="#555" stroke-width="2"/>
+  <text x="200" y="108" text-anchor="middle" fill="#888" font-family="Arial" font-size="28">&#9917;</text>
+  <rect x="80" y="180" width="240" height="4" fill="#333"/>
+  <text x="200" y="240" text-anchor="middle" fill="#777" font-family="Arial" font-size="16">Sports Day</text>
+</svg>
